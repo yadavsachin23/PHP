@@ -1,7 +1,6 @@
 <?php 
 include "conn.php";
 
-// $sql = "SELECT employee.emp_id,emp.FirstName, dept.dept_name FROM emp INNER JOIN dept on emp.id = dept.dept_id";
 $sql = "SELECT emp.id,emp.emp_id,emp.name, dept.dept,dept.salary FROM emp INNER JOIN dept ON emp.emp_id = dept.emp_id";
 $result = mysqli_query($conn,$sql);
 
